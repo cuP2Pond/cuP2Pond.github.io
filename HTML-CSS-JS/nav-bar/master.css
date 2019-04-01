@@ -1,0 +1,43 @@
+html,body{
+  margin:0;
+  padding: 0;
+
+  /* from fonts.google.com
+  for using the font as default,
+  we add it inside body
+  the tag used is font-family
+   */
+  font-family: 'Comfortaa', cursive;
+}
+.nav-bar{
+
+  /* css flexbox */
+  display: flex;
+  justify-content: space-around;
+
+  /* background gradinet blue color */
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(52,52,89,1) 0%, rgba(0,212,255,1) 100%);
+
+
+  padding: 20px;
+}
+.nav-item{
+
+  /* to display in same line, since div is block level by default */
+  display: inline;
+
+  border: solid 1px;
+  padding: 5px;
+  min-width: 100px;
+  border-radius: 2px;
+  text-align: center;
+  color:white;
+
+  /* for animation effect */
+  transition: 0.4s;
+}
+.nav-item:hover{
+
+  /* the changes when hovered */
+  transform: scale(1.2);
+}
